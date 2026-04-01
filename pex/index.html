@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <title>Barbearia Richad Machado</title>
+</head>
+<body>
+    <div id="medio"><img id="logo" src="Logo barbearia .PNG" alt="logo">
+       
+        <div id="menu">
+        <a id="icone" href="#">Sobre nós</a>
+        <a id="icone" href="#">Serviços</a>
+        <a id="icone" href="#">Entre em contato</a>
+        </div>
+
+        <div id="redes-sociais">
+        <a href="https://www.instagram.com/barbearia_rmachado?igsh=MW1mdHJqaWIxZmE3bQ=="><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+
+    </div>
+
+    <div id="principal">
+        <div id="apresentacao">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Obcaecati delectus quae rem impedit sunt reprehenderit aspernatur<br>adipisci deleniti? Nulla sint quis natus cum iste! Ipsum magnam aperiam<br> repellendus reprehenderit architecto.</div> 
+         
+        <div id="textinho">texto menor-texto menor- texto menor</div>
+
+        <a href="https://wa.me/5547999546761?text=Olá!%20Gostaria%20de%20agendar%20um%20horário" 
+   target="_blank" 
+   class="btn-whatsapp-flutuante">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+       <!--<a href="https://wa.me/5547999546761?text=Olá!%20Gostaria%20de%20agendar%20um%20horário" target="_blank" class="zap"><i class="fa-brands fa-whatsapp"></i></a>-->
+    </div>
+
+    <div id="principal2">
+      <div id="conteudo-texto">
+        <div id="apresentacao2">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Obcaecati delectus quae rem impedit sunt reprehenderit aspernatur<br>adipisci deleniti? Nulla sint quis .</div> 
+
+         <div id="historia">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Maiores veritatis perspiciatis adipisci necessitatibus delectus. Odio doloresbr <br> nesciunt illum laudantium delectus fugiat facere quas quibusdam in quam id,<br> consectetur beatae asperiores. Lorem ipsum dolor sit, amet consectetur adipisicing<br> elit..</div>
+      </div>
+         <img id="richard" src="richard-foto.jpeg" alt="foto-richard"></div>
+
+    </div>
+
+    <div id="principal3"></div>
+
+    <div id="principal4"></div>
+
+    <div id="principal5"></div>
+
+    <script>
+const linkZap = document.querySelector(".btn-whatsapp-flutuante");
+
+linkZap.addEventListener("click", function(event) {
+    console.log("O cliente clicou para agendar no WhatsApp!");
+    
+   const msg = "Olá, vi o site da barbearia e quero agendar!";
+    this.href = `https://wa.me/5547999546761?text=${encodeURIComponent(msg)}`;
+});
+    </script>
+
+
+    
+</body>
+</html>
