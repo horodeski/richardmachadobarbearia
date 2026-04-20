@@ -7,7 +7,7 @@
 }
 
 .herosection {
-	height: 95vh;
+	height: 70vh;
 	background-image: url("./images/hero-background.png");
 	background-size: cover;
 	background-position: center;
@@ -22,7 +22,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 4vh;
-    z-index: 1;
+	z-index: 1;
 	padding-top: 10vh;
 }
 
@@ -35,15 +35,18 @@
 	width: 100%;
 	position: absolute;
 	top: 0;
-	height: 95vh;
+	height: 100vh;
 	background-color: rgba(0, 0, 0, 0.247);
 	left: 0;
 }
 
-.infosection {
+section {
 	padding: 15vh 10vw;
-	display: flex;
 	gap: 5vw;
+}
+
+.infosection {
+	display: flex;
 }
 
 .infosection img {
@@ -52,7 +55,7 @@
 }
 
 .infosection .description {
-    padding-top: 5vh;
+	padding-top: 5vh;
 	display: flex;
 	flex-direction: column;
 	gap: 2vh;
@@ -83,7 +86,7 @@ nav {
 	justify-content: space-between;
 	padding: 2vh 3vw;
 	position: fixed;
-    z-index: 2;
+	z-index: 2;
 	top: 0;
 }
 
@@ -129,18 +132,78 @@ nav {
 	transform: scale(1.2);
 }
 
-#principal {
-	background-color: #e4e4e4;
-	width: 100%;
-	height: 550px;
+.mission > div:nth-child(2) {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+}
+
+.mission .card {
+	flex: 1 1 260px;
+	max-width: 420px;
+}
+
+.mission .card h2 {
+	margin-bottom: 2vh;
+}
+
+.mission,
+.services {
 	display: flex;
 	flex-direction: column;
+	gap: 7vh;
+}
+
+.services {
 	justify-content: center;
-	align-items: flex-start;
-	padding: 50px;
-	font-weight: bold;
-	box-sizing: border-box;
-	position: relative;
+	align-items: center;
+}
+
+section .header {
+	display: flex;
+	gap: 2vh;
+	flex-direction: column;
+}
+
+.services .header {
+	align-items: center;
+}
+
+.services > div:nth-child(2) {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(260px, 1fr));
+	gap: 24px;
+	width: 100%;
+}
+
+.services .card {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 3vh;
+}
+
+.contact {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.contact .image {
+	width: 100%;
+	height: 40vh;
+	background-color: #D9D9D9;
+}
+
+.contact form {
+	display: flex;
+	flex-direction: column;
+	gap: 3vh;
+	margin-top: 4vh;
+}
+
+.contact form button {
+	width: fit-content;
 }
 
 .zap {
@@ -183,65 +246,63 @@ nav {
 	color: #fff;
 }
 
+footer #logo {
+	width: 15vw;
+	height: inherit;
+	margin-bottom: 10vh;
+}
+
+footer {
+	padding: 15vh 3vw;
+	background-color: #000000;
+}
+
+footer * {
+	color: white;
+}
+
+footer .bottom, footer .top {
+	display: flex;
+	justify-content: space-between;
+}
+
+footer .top {
+	padding-bottom: 4vh;
+}
+
+footer .bottom {
+	width: 100%;
+	padding-top: 4vh;
+	border-top: 2px solid white;
+}
+
+footer .bottom  .links {
+	display: flex;
+	gap: 3vw;
+}
+
+footer .message {
+	width: 70%;
+}
+
+footer .message h1 {
+	margin-bottom: 3vh;
+}
+
+footer .top .email {
+	display: flex;
+	flex-direction: column;
+}
+
 /* Ajuste para não sumir no tema escuro que você criou */
 body.escuro .btn-whatsapp-flutuante {
 	box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
 }
 
-#apresentacao {
-	text-align: center;
-	justify-content: center;
-	color: black;
-	font-size: 30px;
-}
-
-#textinho {
-	font-weight: normal;
-	margin-top: 10px;
-}
-
-#historia {
-	font-weight: normal;
-	margin-top: 15px;
-	color: #474448;
-}
-
-#apresentacao2 {
-	text-align: left;
-	justify-content: center;
-	color: black;
-}
-
-/* #conteudo-texto {
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-	flex: 1;
-} */
-
-/* #richard {
-	width: 300px;
-	height: 100%;
-	border-radius: 5px;
-	margin-right: 40px;
-} */
-
-#principal3 {
-	background-color: #444;
-	width: 100%;
-	height: 300px;
-}
-
-#principal4 {
-	background-color: lightblue;
-	width: 100%;
-	height: 400px;
-}
-
-#principal5 {
-	background-color: lightgray;
-	width: 100%;
-	height: 400px;
+@media (max-width: 900px) {
+	.services > div:nth-child(2) {
+		grid-template-columns: repeat(2, minmax(220px, 1fr));
+	}
 }
 
 #footer{
@@ -288,5 +349,11 @@ body.escuro .btn-whatsapp-flutuante {
 		max-width: 300px;
 		margin: 20px 0 0 0; /* Tira a margem da direita e põe no topo */
 		height: auto;
+	}
+}
+
+@media (max-width: 560px) {
+	.services > div:nth-child(2) {
+		grid-template-columns: 1fr;
 	}
 }
