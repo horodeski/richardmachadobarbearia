@@ -71,12 +71,14 @@ section {
 	gap: 2vh;
 }
 
-.history .header {
+.galery .header {
 	align-items: center;
 }
 
-.galery .header {
-	align-items: flex-end;
+.galery {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 button {
