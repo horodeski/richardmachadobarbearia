@@ -9,19 +9,31 @@
 	</head>
 	<body>
 		<nav>
-			<div id="menu">
-				<a id="icone" href="#servicos">Serviços</a>
-				<a id="icone" href="#sobre">Sobre</a>
-				<img id="logo" src="./images/logo.png" alt="logo" />
-				<a id="icone" href="#galeria">Galeria</a>
-				<a id="icone" href="#depoimentos">Depoimentos</a>
+			<div class="nav-left">
+				<a class="nav-link" href="#servicos">Serviços</a>
+				<a class="nav-link" href="#sobre">Sobre</a>
+			</div>
+			<img id="logo" src="./images/logo.png" alt="logo" />
+			<div class="nav-right">
+				<a class="nav-link" href="#galeria">Galeria</a>
+				<a class="nav-link" href="#depoimentos">Depoimentos</a>
 			</div>
 			<div id="redes-sociais">
 				<a target="_blank" href="https://www.instagram.com/barbearia_rmachado?igsh=MW1mdHJqaWIxZmE3bQ==">
 					<i class="fa-brands fa-instagram"></i>
 				</a>
 			</div>
+			<div id="hamburger">
+				<i class="fa-solid fa-bars"></i>
+			</div>
 		</nav>
+		<div id="mobile-menu">
+			<a class="nav-link" href="#servicos">Serviços</a>
+			<a class="nav-link" href="#sobre">Sobre</a>
+			<a class="nav-link" href="#galeria">Galeria</a>
+			<a class="nav-link" href="#depoimentos">Depoimentos</a>
+		</div>
+		<div id="overlay"></div>
 		<main>
 			<a href="https://wa.me/5547999546761?text=Olá!%20Gostaria%20de%20agendar%20um%20horário" target="_blank" class="btn-whatsapp-flutuante">
 				<i class="fa-brands fa-whatsapp"></i>
@@ -266,9 +278,10 @@
 				</div>
 				<div class="bottom">
 					<div class="links">
-						<a id="icone" href="#">Sobre nós</a>
-						<a id="icone" href="#">Serviços</a>
-						<a id="icone" href="#">Entre em contato</a>
+						<a id="nav-link" href="#servicos">Serviços</a>
+						<a id="nav-link" href="#sobre">Sobre</a>
+						<a id="nav-link" href="#galeria">Galeria</a>
+						<a id="nav-link" href="#depoimentos">Depoimentos</a>
 					</div>
 					<span>© 2026 Barbearia Richard Machado. Todos os direitos reservados.</span>
 				</div>
