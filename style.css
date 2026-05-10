@@ -376,7 +376,6 @@ footer .top .email {
 	display: flex;
 	flex-direction: column;
 	margin-top: 4vh;
-	justify-content: space-between;
 }
 
 .testimonies .stars {
@@ -515,7 +514,7 @@ body.escuro .btn-whatsapp-flutuante {
 
 	#redes-sociais {
 		position: absolute;
-		right: 10vw;
+		right: 15vw;
 		margin-top: 3px;
 	}
 
